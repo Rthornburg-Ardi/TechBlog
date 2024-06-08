@@ -1,11 +1,11 @@
-const withAuth = (req, res, next) => {
-  // If the user is not logged in, redirect the request to the login route.
-  if (!req.session.logged_in) {
-    res.redirect('/login');
-  } else {
-    // Otherwise, continue to the next step.
-    next();
-  }
-};
-
-module.exports = withAuth;
+// Confirm the user is logged in for routes with "confirmAuth"
+const confirmAuth = (req, res, next) => {
+    if (!req.session.logged_in) {
+      res.redirect('/login');
+    } else {
+      next();
+    }
+  };
+  
+  module.exports = confirmAuth;
+  
