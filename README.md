@@ -1,5 +1,5 @@
 # TechBlog!
-GitHub Repo: https://github.com/jheersink8/tech-blog
+GitHub Repo: (https://github.com/Rthornburg-Ardi/TechBlog)
 
 Deployed Site: https://read-tech-today.onrender.com/ 
 
